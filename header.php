@@ -46,14 +46,21 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'loltheme' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
+      <div class="social-menu">
+        <div>Social Icons</div>
+        <div class="header-donate-button">Donate</div>
+        <div class="header-nodes-button">Check Nodes</div>
+      </div>
+      <div class="main-menu">
+        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'loltheme' ); ?></button>
+        <?php
+        wp_nav_menu(
+          array(
+            'theme_location' => 'menu-1',
+            'menu_id'        => 'primary-menu',
+          )
+        );
+        ?>
+        </div>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
