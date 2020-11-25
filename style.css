@@ -656,11 +656,16 @@ textarea {
   background-color: #ffffff;
 }
 
+.site-header {
+  position: fixed;
+  width: 100%;
+}
+
 .site-branding {
   position: absolute;
   width: 200px;
   margin-left: 56px;
-  top: 56px;
+  top: 32px;
   z-index: 999;
 }
 
@@ -751,7 +756,7 @@ textarea {
   display: block;
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 50em) {
   .menu-toggle {
     display: none;
   }
@@ -788,6 +793,12 @@ textarea {
 
 /* Posts and pages
 --------------------------------------------- */
+
+.homepage-div {
+  height: 300px;
+  background-color: #e40d7e;
+}
+
 .sticky {
   display: block;
 }

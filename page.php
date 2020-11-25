@@ -17,6 +17,16 @@ get_header();
 
 	<main id="primary" class="site-main">
 
+
+    <?php
+      if ( is_front_page() ) : //hard-coded banner for front page only
+				?>
+				<div class="homepage-div">Helooksujaghkjsadhkas</div>
+				<?php
+			endif;
+    ?>
+
+
 		<?php
 		while ( have_posts() ) :
 			the_post();
