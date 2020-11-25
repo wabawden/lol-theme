@@ -21,7 +21,17 @@ get_header();
     <?php
       if ( is_front_page() ) : //hard-coded banner for front page only
 				?>
-				<div class="homepage-div">Helooksujaghkjsadhkas</div>
+				<div class="homepage-div">
+          <div class="banner-carousel">
+            <span class="banner-headline banner-headline-1">DISRUPTING</span>
+            <br>
+            <span class="banner-headline banner-headline-2">CANCER HEAD-ON</span>
+            <p class="banner-headline-text">Lymphoma is the most common cancer in young people and it’s our mission to educate, empower and ensure everyone knows the signs and symptoms!</p>
+          </div>
+          <div class="banner-megaphone-woman">
+            <img class="megaphone-woman" src="<?php echo get_template_directory_uri() ?>/images/megaphone_woman.png">
+          </div>
+        </div>
 				<?php
 			endif;
     ?>
